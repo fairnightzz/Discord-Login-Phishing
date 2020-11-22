@@ -9,6 +9,11 @@
 - [bit.dev](https://bit.dev)
 
 [Import this into your local React project](https://bit.dev/snimmagadda1/discord-login-form/discord-form)
+
+```
+npm i @bit/snimmagadda1.discord-login-form.discord-form
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
