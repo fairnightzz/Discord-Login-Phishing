@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import backgroundImg from "./background.jpg";
+import DiscordForm from "./DiscordForm";
+import { ThemeProvider } from "styled-components";
+
+const theme = {
+  colors: {
+    muted: "#B9BBBE",
+    blue: "#7289da",
+  },
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <header className="App-header">
+          <DiscordForm />
+        </header>
+      </ThemeProvider>
     </div>
   );
 }
