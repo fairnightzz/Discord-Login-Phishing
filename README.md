@@ -6,6 +6,9 @@
 - [React](https://reactjs.org/)
 - [cra](https://reactjs.org/docs/create-a-new-react-app.html)
 - [styled-components](https://styled-components.com/)
+- [bit.dev](https://bit.dev)
+
+[Import this into your local React project](https://bit.dev/snimmagadda1/discord-login-form/discord-form)
 ## Available Scripts
 
 In the project directory, you can run:

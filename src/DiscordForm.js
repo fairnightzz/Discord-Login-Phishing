@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import discordLogo from "./discord_logo.png";
 import qr from "./qr.png";
 import GamerForm from "./styled/GamerForm";
 import GamerInput from "./styled/GamerInput";
@@ -17,6 +16,7 @@ const theme = {
 const Container = styled.div`
   display: flex;
   background-color: #363a3e;
+  color: white;
   border-radius: 8px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
 
@@ -45,6 +45,7 @@ const Container = styled.div`
     min-width: 784px;
   }
 `;
+// test
 
 class DiscordForm extends React.Component {
   render() {
