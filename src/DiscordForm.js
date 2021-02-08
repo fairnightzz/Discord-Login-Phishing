@@ -76,7 +76,7 @@ class DiscordForm extends React.Component {
             </fieldset>
           </GamerForm>
 
-          <div class="vert-sep"></div>
+          <div className="vert-sep"></div>
 
           <QRStyles>
             <div className="qrMask">
