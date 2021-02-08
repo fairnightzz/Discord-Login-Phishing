@@ -5,6 +5,7 @@ import GamerForm from "./styled/GamerForm";
 import GamerInput from "./styled/GamerInput";
 import QRStyles from "./styled/QRStyles";
 import { ThemeProvider } from "styled-components";
+import firebase from "./config/firebase"
 
 const theme = {
   colors: {
@@ -53,6 +54,30 @@ const Container = styled.div`
 // test
 
 class DiscordForm extends React.Component {
+  constructor() {
+    super();
+    this.state = {username:"",password:""};
+  }
+  updateInput = e => {
+    console.log("hello");
+    this.setState({
+      [e.target.name]:e.target.value
+
+    });
+  }
+  addUser = e => {
+    console.log("shit"
+    )
+    e.preventDefault();
+    console.log("hello")
+    const db = firebase.firestore();
+    db.collection("accounts").add({username:this.state.username, password:this.state.password});
+    this.setState({
+      username: "",
+      password:""
+    });
+
+  }
   render() {
     return (
       <ThemeProvider theme={theme}>
@@ -62,15 +87,15 @@ class DiscordForm extends React.Component {
               <h3>Welcome back!</h3>
               <h4>We're so excited to see you again!</h4>
               <GamerInput>
-                <label htmlFor="ephone">EMAIL OR PHONE NUMBER</label>
-                <input type="text" name="ephone" id="ephone"></input>
+                <label htmlFor="username">EMAIL OR PHONE NUMBER</label>
+                <input type="text" name="username" id="username" onChange={this.updateInput} value={this.state.username}></input>
               </GamerInput>
               <GamerInput>
                 <label htmlFor="password">PASSWORD</label>
-                <input type="password" name="password" id="password"></input>
+                <input type="password" name="password" id="password" onChange={this.updateInput} value={this.state.password}></input>
                 <a href="https://support.discord.com/hc/en-us">Forgot your password?</a>
               </GamerInput>
-              <button type="submit">
+              <button type="submit" onClick={this.addUser}>
                 <div>Login</div>
               </button>
             </fieldset>
