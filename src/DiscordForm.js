@@ -20,11 +20,12 @@ const Container = styled.div`
   color: white;
   border-radius: 8px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
-  @import url('https://fonts.googleapis.com/css2?family=Catamaran');
+
   @font-face {
-    font-family: 'Catamaran', sans-serif;
+    font-family: catamaran;
+    src: url("./Catamaran-Regular.tff");
   }
-  font-family: 'Catamaran', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   line-height: 20px;
 
   ${GamerInput}:first-of-type {
