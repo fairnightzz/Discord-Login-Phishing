@@ -10,6 +10,7 @@ const GamerInput = styled.div`
     background-color: #303338;
     border: 1px solid black;
     color: #dcddde;
+    padding-left: 8px;
   }
 
   input:focus {

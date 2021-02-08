@@ -39,6 +39,11 @@ const Container = styled.div`
     color: ${(props) => props.theme.colors.blue};
     font-size: 13px;
     font-weight: 500;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 
   @media (min-width: 830px) {
@@ -63,7 +68,7 @@ class DiscordForm extends React.Component {
               <GamerInput>
                 <label htmlFor="password">PASSWORD</label>
                 <input type="password" name="password" id="password"></input>
-                <a>Forgot your password?</a>
+                <a href="https://support.discord.com/hc/en-us">Forgot your password?</a>
               </GamerInput>
               <button type="submit">
                 <div>Login</div>

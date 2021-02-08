@@ -34,7 +34,7 @@ const GamerForm = styled.form`
 
   h3 {
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 600;
     padding-bottom: 10px;
   }
 
@@ -42,6 +42,7 @@ const GamerForm = styled.form`
     font-size: 16px;
     font-weight: 500;
     color: ${props => props.theme.colors.muted};
+    margin-bottom: 15px;
   }
 
   button {
