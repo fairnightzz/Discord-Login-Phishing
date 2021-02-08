@@ -35,7 +35,7 @@ const GamerForm = styled.form`
   h3 {
     font-size: 24px;
     font-weight: 600;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   h4 {
@@ -55,6 +55,12 @@ const GamerForm = styled.form`
     color: #FFF;
     height: 40px;
     background-color : ${props => props.theme.colors.blue};
+    transition: all .2s;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #6c80d2;
   }
 `;
 

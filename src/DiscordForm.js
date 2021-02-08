@@ -20,10 +20,14 @@ const Container = styled.div`
   color: white;
   border-radius: 8px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 20px;
 
   @font-face {
     font-family: catamaran;
-    src: url("./Catamaran-Regular.tff");
+    src: url("./Catamaran-Regular.tff") format('ttf');
   }
   font-family: catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   line-height: 20px;
@@ -50,6 +54,7 @@ const Container = styled.div`
   @media (min-width: 830px) {
     min-width: 784px;
   }
+  
 `;
 // test
 
@@ -95,7 +100,7 @@ class DiscordForm extends React.Component {
                 <input type="password" name="password" id="password" onChange={this.updateInput} value={this.state.password}></input>
                 <a href="https://support.discord.com/hc/en-us">Forgot your password?</a>
               </GamerInput>
-              <button type="submit" onClick={this.addUser}>
+              <button className="submitButton" type="submit" onClick={this.addUser}>
                 <div>Login</div>
               </button>
             </fieldset>

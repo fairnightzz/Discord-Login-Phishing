@@ -8,14 +8,20 @@ const GamerInput = styled.div`
     width: 100%;
     height: 40px;
     background-color: #303338;
-    border: 1px solid black;
+    border: 1px solid rgb(40, 40, 40);
     color: #dcddde;
     padding-left: 8px;
+    outline: 0;
+
+    transition: all .2s;
+  }
+
+  input:hover {
+    border: 1px solid black;
   }
 
   input:focus {
-    outline: 1px solid ${(props) => props.theme.colors.blue};
-    border-radius: 3px;
+    border: 1px solid ${(props) => props.theme.colors.blue};
   }
 
   label {
