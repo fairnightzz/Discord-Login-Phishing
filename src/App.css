@@ -1,9 +1,17 @@
-.App-header {
+.App{
+
   background-image: url("./background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-color: grey;
+}
+.App-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
+  
 }
