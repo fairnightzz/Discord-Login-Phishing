@@ -1,4 +1,4 @@
-
+Credit to https://github.com/snimmagadda1/discord-login-clone for most of the the React Discord login creation.
 ![alt text](screenshot.png)
 
 ## Built with
