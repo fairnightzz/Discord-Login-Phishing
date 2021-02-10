@@ -1,7 +1,10 @@
 ## An educational Discord Login Phishing Tool
 Credit to https://github.com/snimmagadda1/discord-login-clone for most of the the React Discord login creation.
-![alt text](screenshot.png)
 
+This is a very basic yet powerful phishing website that is connected to a Google Firebase database. Once the user logs in, it will redirect 
+to one of Discord's authentication pages to ensure credibility. Please use this with caution as stealing people's passwords is a crime.
+
+![alt text](screenshot.png)
 ## Built with
 
 - [React](https://reactjs.org/)
