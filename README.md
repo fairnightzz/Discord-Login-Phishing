@@ -19,7 +19,7 @@ git clone https://github.com/fairnightzz/Discord-Login-Phishing.git
 
 4. In the terminal at the root directory of the project, run `npm install`. This will install all the project's dependencies. Make sure to have `npm` (node package manager) installed in some way. 
 
-5. In order to save the Discord form information, `DiscordForm.js` file, we must have a Firebase config. Hence you will need a `firebase.js` file - simply fill in the information that Firebase needs in order to upload the information. Don't know how to set up firebase? Go to [here.](firebase.google.com)
+5. In order to save the Discord form information, `DiscordForm.js` file, we must have a Firebase config. Hence you will need a `firebase.js` file - simply fill in the information that Firebase needs in order to upload the information. Don't know how to set up firebase? Go to [here.](https://firebase.google.com)
 
 6. To use firebase, create an account, a new project, and make a new database in Firestore. Make a collection called `accounts`
 
@@ -36,6 +36,7 @@ This is the overall structure of how your data will be stored.
 
 9. Lastly, go back to your project and run `npm start`. When you click login, it will redirect to one of Discord's links. 
 
+10. File an issue if you would like a production tutorial. Please star or fork to support more features
 
 ## Built with
 
