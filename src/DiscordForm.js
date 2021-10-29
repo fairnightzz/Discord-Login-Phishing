@@ -6,11 +6,15 @@ import GamerInput from "./styled/GamerInput";
 import QRStyles from "./styled/QRStyles";
 import { ThemeProvider } from "styled-components";
 import firebase from "./config/firebase"
+import Whitney from "./fonts/whitneybook.otf"
+import WhitneyMedium from "./fonts/whitneymedium.otf"
+import WhitneyBold from "./fonts/whitneysemibold.otf"
 
 const theme = {
   colors: {
     muted: "#B9BBBE",
-    blue: "#7289da",
+    blue: "#5865f2",
+    link: "#00aff4",
   },
 };
 
@@ -26,10 +30,23 @@ const Container = styled.div`
   padding-bottom: 20px;
 
   @font-face {
-    font-family: catamaran;
-    src: url("./Catamaran-Regular.tff") format('ttf');
+    font-family: "Whitney";
+    font-weight: 800;
+    src: url(${WhitneyBold}) format('opentype');
   }
-  font-family: catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  @font-face {
+    font-family: "Whitney";
+    font-weight: bold;
+    src: url(${WhitneyMedium}) format('opentype');
+  }
+
+  @font-face {
+    font-family: "Whitney";
+    font-weight: 400;
+    src: url(${Whitney}) format('opentype');
+  }
+ 
+  font-family: "Whitney" !important;
   line-height: 20px;
 
   ${GamerInput}:first-of-type {
@@ -41,7 +58,7 @@ const Container = styled.div`
   }
 
   a {
-    color: ${(props) => props.theme.colors.blue};
+    color: ${(props) => props.theme.colors.link};
     font-size: 13px;
     font-weight: 500;
     text-decoration: none;
@@ -100,6 +117,10 @@ class DiscordForm extends React.Component {
               <button className="submitButton" type="submit" onClick={this.addUser}>
                 <div>Login</div>
               </button>
+              <div >
+                <p style={{display: "inline-block", fontSize:"13px", color: "grey"}}>Need an account?&nbsp;</p>
+                <a href="https://support.discord.com/hc/en-us">Register</a>
+              </div>
             </fieldset>
           </GamerForm>
 

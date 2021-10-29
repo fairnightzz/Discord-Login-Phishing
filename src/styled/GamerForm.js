@@ -26,7 +26,7 @@ const GamerForm = styled.form`
 
   h3,
   h4 {
-    text-align: center;
+    text-align: left;
     padding: 0px;
     margin: 0px;
     width: auto;
@@ -34,7 +34,7 @@ const GamerForm = styled.form`
 
   h3 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 800;
     padding-bottom: 20px;
   }
 
@@ -47,8 +47,8 @@ const GamerForm = styled.form`
 
   button {
     width: 100%;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     line-height: 24px;
     border: none;
     border-radius: 5px;
@@ -60,7 +60,7 @@ const GamerForm = styled.form`
   }
 
   button:hover {
-    background-color: #6c80d2;
+    background-color: #4f5cf0;
   }
 `;
 
